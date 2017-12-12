@@ -1,53 +1,45 @@
+<!doctype html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wu-Hang</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    
+</head>
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <html lang= "en-us">
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-                    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <title>Wu-Hangman</title>
+<body>
+    <div class="container">
+        <img id="title-image" src="assets/images/hangman-title.png" alt="Hangman Title Image" />
+        <div class="row">
+            <div class="col-md-6 gameplay-column">
+                <img id="youwin-image" src="assets/images/you-win.png" alt="Winning Image" />
+                <img id="gameover-image" src="assets/images/gameover.png" alt="Game Over Image" />
+                <h2 id="pressKeyTryAgain">Press Any Key to Try Again!</h2>
+                <img id="hangmanImage" src="" alt="" />
+            </div>
+            <div class="col-md-6 gameplay-column">
+                <h2>Guess who. It's the WU!</h2>
+                <h4>Wins</h4>
+                <h5 id="Wins"></h5>
+                <h4>Current Word</h4>
+                <h3 id="current-Word"></h3>
+                <h4>Guesses Remaining</h4>
+                <h6 id="guesses-left"></h6>
+                <h4>Letters Guessed</h4>
+                <h3 id="letters-guessed"></h3>
+            </div>
+        </div>
+    </div>
+    <script src="assets/javascript/wuhang.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+</body>
 
-    </head>
-    <body>
-        <h1>Wu-Hang</h1>
-<p>Press any Button to get started</p>
-<p>Wins</p>
-<div class= "wins"></div>
-<p>Current Word</p>
-<div class= "currentWord"></div>
-<p>Number of Guesses Remaining</p>
-<div class= "guesses"></div>
-<p>Letters Already Guessed</p>
-<div class= "alreadyGuessed"></div>
-
-    </body>
-<!-- Any button to start game -->
-
-<!-- Toggle appear and dissapear of letter on -->
-    <script type="text/javascript">
-    var currentWord = new Array("Rza", "Gza", "MethodMan", "Raekwon", "Ghostface Killah", "Inspectah Deck" ,"ODB" ,"Cappadonna" ,"Masta Killa");
- 
-   for(i=0;i<currentWord.length;i++){
-       document.write(currentWord[i]);
-   }
-   // var chooseWu = function () {
-    // var wuMember = currentWord[Math.floor(Math.random() * wuMember.length)];  
-    // return wuMember;
-    // };
-    // document.getElementById("currentWord").innerHTML = produceMessage();
-
-n   
-
-
-
-    </script>
 </html>
-
-<!-- Payers will guess the names of Wu Tang members -->
-
-<!-- Cre -->
